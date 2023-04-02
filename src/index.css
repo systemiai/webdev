@@ -39,19 +39,45 @@ code {
   margin-right: auto;
   margin-left: auto;
 }
+.slogan{
+ 
+  font-size : 30px;
+ 
+}
+.slogan i{
+
+  color: white;
+}
 .contact .row {
   width: 100%;
 }
+
+.appmodel{
+  flex-direction: column;
+
+}
+
 .row {
   display: flex;
   z-index: 1;
+  
 }
 .img-fluid {
   max-width: 60%;
   width: 50%;
 }
+.img-fluid1 {
+  width: 100%;
+  height: 600px;
+}
 .text-center {
-  text-align: center;
+ 
+  margin: 0 20% 0 20%;
+}
+
+
+.serv{
+  text-align: left;
 }
 .bgred {
   background-color: red;
@@ -78,7 +104,8 @@ code {
 }
 .col-md-3 {
   margin: 0 1rem!important;
-  width:100%;
+  align-self: center;
+
 }
 
 .col-md-4 {
@@ -99,7 +126,7 @@ code {
 }
 /* Navbar */
 .navopened {
-  background-color: #010606!important;
+  background-color: #0197f6!important;
 }
 .navopened .logo {
   color: #fafafa!important;
@@ -111,14 +138,43 @@ code {
   background-color: #010606!important;
 }
 .navbar {
+  background-color: #2471A3;
   transition: background-color 0.4s;
   position: fixed;
   top: 0;
   width: 100% ;
   padding: 0.5rem;
-  background-color: transparent;
+  
   z-index: 2;
   backdrop-filter: blur(2px);
+}
+.contactFoot{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.contactFoot a{
+  color: white;
+
+}
+.navbar .row{
+  
+  align-content: center; 
+  display: grid;
+  
+}
+
+.navbar .bar{
+  
+  justify-content: center; 
+  display: flex;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.navbar .bar a{
+  font-size: 30px;
 }
 .navbar .logo {
   transition: all 0.2s;
@@ -170,6 +226,8 @@ code {
   background-color: white;
 }
 /* Header */
+
+
 video {
   top: 0;
   object-fit: cover;
@@ -209,11 +267,18 @@ header h1 {
 /* main */
 .main-title {
   font-size: 48px;
-  color: #01bf71;
+  color: #003151;
+  
+}
+.main-title .about-h2{
+
+  margin-top: 0;
+  
 }
 .main-p {
   font-size: 22px;
   font-weight: 500;
+  
 }
 main {
   padding: 3rem 0;
@@ -236,14 +301,15 @@ main {
   margin-top: 2.5px;
 
   font-size: 18px;
-  color:#919191;
+  color:white;
 }
 footer {
+  background-color: #2471A3;
   width: 100%;
   height: auto;
   margin: 0;
   padding: 1rem 0;
-  background-color:#010606;
+  
 }
 .side1 {
   width: 50%;
@@ -254,6 +320,7 @@ footer {
 }
 footer .col-md-3 {
   height: 100%;
+  cursor: pointer;
 }
 footer .logo {
   transition: all 0.2s;
@@ -336,14 +403,15 @@ footer ul li a {
 
 .services .col-md-4 {
   margin: 1rem 1rem 1rem 1rem;
-
+  padding-top: 40px;
+  margin-bottom: 300px;
 
 }
 ul li a {
   cursor: pointer;
 }
 .about {
-  margin-bottom: 15rem;
+  margin-bottom: 100px;
 }
 .card-cover {
   padding: 2rem 0rem;
@@ -383,6 +451,27 @@ ul li a {
 
   transition: background-color 0.2s;
 }
+
+.sipa{
+
+  font-size: 22px;
+  color: black;
+  font-weight: 500
+  
+}
+.sendButton{
+
+  width: 100%;
+  height: 60px;
+  background-color: #003151;
+  
+}
+.sendButton div{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
 .contact-textarea {
   color:white;
   border-radius: 5px;
@@ -420,15 +509,11 @@ ul li a {
   .col-md-3 {
     width: 100%;
   }
-  .side1 .row {
+   .row {
     display: inline-block;
     width: 100%;
   }
-  .side2 .row {
-    display: inline-block;
-    width: 100%;
-
-  }
+ 
 }
 
 @media (max-width: 768px) { 
@@ -474,16 +559,9 @@ ul li a {
     margin: 0!important;
   }
 
-  footer .row {
-    display: block;
-  }
-  .side1 {
-    width: 100%;
-  }
-  .side2 {
-    width: 100%;
+ 
   
-  }
+  
    .navopened ul {
     top: 55px!important;
 
@@ -576,4 +654,76 @@ ul li a {
 }
 .mb-1 {
   margin-bottom: 1rem!important;
+}
+
+
+/*Cookies */
+
+
+.cookie-consent{
+  margin: auto;
+  display: inline;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background: #444;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: serif;
+  
+}
+.cookie-consent a{
+  margin: 0 10px;
+  color: #fff;
+
+}
+.cookie-consent a:hover{
+  
+  color:blue;
+
+}
+.cookie-consent button{
+  color: #fff;
+  border: 1px solid #222;
+  background: #222;
+  padding: 20px 30px;
+  font-size: 27px;
+  font-family: serif;
+  margin: 2px 10px;
+  font-weight: 900;
+
+}
+.cookie-consent button:hover{
+  background: #fff;
+  color:#222
+}
+
+
+.allow-button{
+      height: 20px;
+    width: 104px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 3px;
+    border: 1px solid green;
+    background-color: green;
+}
+
+.pad{
+
+  color: #D35400;
+}
+
+.bio{
+  color: #3498DB;
+}
+
+.ron{
+  color: #C0392B;
 }
